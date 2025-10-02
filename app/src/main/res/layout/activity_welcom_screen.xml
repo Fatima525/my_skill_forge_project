@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Welcome_screen"
+    android:background="@android:color/white">
+
+    <!-- Curved Top Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/top_curve_bg">
+
+        <!-- App Name inside curved background -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SkillForge"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Circle Image OVERLAPPING bottom of curved layout -->
+    <ImageView
+        android:id="@+id/circleImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bg_2"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_bg"
+        android:clipToOutline="true"
+        android:contentDescription="Profile / Main Image"
+        android:layout_gravity="center"
+        android:layout_marginTop="-75dp" /> <!-- pushes it into curve -->
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textColor="#2E2D2C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#1A1A1A"
+            app:strokeWidth="2dp"
+            app:cornerRadius="28dp"
+            app:backgroundTint="@android:color/transparent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="#2E2D2C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="#1A1A1A"
+            app:strokeWidth="2dp"
+            app:cornerRadius="28dp"
+            app:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- OR Text -->
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="────────  OR  ────────"
+        android:textColor="#2E2D2C"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+
+    <!-- Social Media Icons -->
+    <LinearLayout
+        android:id="@+id/socialIconsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btnGoogle"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/img"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_icon_bg" />
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_facebook"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_icon_bg" />
+
+        <ImageView
+            android:id="@+id/btnTwitter"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_icon_bg" />
+    </LinearLayout>
+
+</LinearLayout>

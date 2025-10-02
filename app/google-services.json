@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439166880647",
+    "firebase_url": "https://testingservice-de910.firebaseio.com",
+    "project_id": "testingservice-de910",
+    "storage_bucket": "testingservice-de910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439166880647:android:71bd524e2e19aaf357e122",
+        "android_client_info": {
+          "package_name": "com.example.fyp_skill_forge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439166880647-mrtm2ootpumfpkp4jge6psgekse7pnrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fyp_skill_forge",
+            "certificate_hash": "d953fa02207294629554bf310af44c9ae057dea7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjPmr3pxDG2zNXgm0Gzmo-UR7VsgVCAWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

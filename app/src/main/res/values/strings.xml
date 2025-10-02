@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FYP-Skill-Forge</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="step_into_smartloop">step Into SkillForge!</string>
+    <string name="tv_username">Username</string>
+    <string name="default_web_client_id">439166880647-mrtm2ootpumfpkp4jge6psgekse7pnrt.apps.googleusercontent.com</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_onboad_nav"
+    app:startDestination="@id/splashFragment">
+
+    <!-- SplashFragment -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.fyp_skill_forge.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ViewPagerFragment -->
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.fyp_skill_forge.ViewPagerFragment"
+        android:label="fragment_view_pager_fragment"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_loginSignUp"
+            app:destination="@id/Welcome_screen"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Welcome Screen Activity -->
+    <activity
+        android:id="@+id/Welcome_screen"
+        android:name="com.example.fyp_skill_forge.auth.welcome_screen.Welcome_screen"
+        android:label="activity_login_sign_up"
+        tools:layout="@layout/activity_welcom_screen" />
+</navigation>
